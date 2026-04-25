@@ -1,0 +1,81 @@
+.french-hangman-container {
+    padding: 20px;
+    text-align: center;
+}
+
+.hangman-drawing {
+    font-size: 24px;
+    margin: 20px 0;
+    font-weight: bold;
+}
+
+.hangman-prompt {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: var(--text-muted);
+}
+
+.hangman-word {
+    font-size: 32px;
+    letter-spacing: 5px;
+    margin-bottom: 30px;
+    font-family: monospace;
+}
+
+.hangman-keyboard {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.hangman-keyboard button {
+    width: 40px;
+    height: 40px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 5px;
+    border: 1px solid var(--background-modifier-border);
+    background-color: var(--background-secondary);
+    color: var(--text-normal);
+}
+
+.hangman-keyboard button:hover:not(:disabled) {
+    background-color: var(--interactive-hover);
+}
+
+.hangman-keyboard button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.hangman-keyboard button.guessed {
+    background-color: var(--background-modifier-error);
+    color: var(--text-on-accent);
+}
+
+.hangman-status {
+    font-size: 20px;
+    margin: 20px 0;
+    font-weight: bold;
+}
+
+.hangman-controls {
+    margin-top: 30px;
+}
+
+.hangman-controls button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: var(--interactive-accent);
+    color: var(--text-on-accent);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.hangman-controls button:hover {
+    background-color: var(--interactive-accent-hover);
+}

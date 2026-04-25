@@ -1,0 +1,201 @@
+{
+  "vocabFilePath": "Vocabulaire.md",
+  "srsData": {
+    "le couscous": {
+      "id": "le couscous",
+      "repetition": 1,
+      "interval": 1,
+      "easeFactor": 2.6,
+      "nextReviewDate": 1775705310721
+    },
+    "le safran||шафран": {
+      "id": "le safran||шафран",
+      "repetition": 1,
+      "interval": 1,
+      "easeFactor": 2.36,
+      "nextReviewDate": 1775706389718
+    },
+    "difficile||трудный": {
+      "id": "difficile||трудный",
+      "repetition": 1,
+      "interval": 1,
+      "easeFactor": 2.6,
+      "nextReviewDate": 1775706422251
+    },
+    "l'episode (m)||эпизод": {
+      "id": "l'episode (m)||эпизод",
+      "repetition": 1,
+      "interval": 1,
+      "easeFactor": 2.6,
+      "nextReviewDate": 1775706438632
+    },
+    "l'antiseptique (m)||антисептик": {
+      "id": "l'antiseptique (m)||антисептик",
+      "repetition": 2,
+      "interval": 6,
+      "easeFactor": 2.7,
+      "nextReviewDate": 1776308306867
+    },
+    "d'occasion||подержанный": {
+      "id": "d'occasion||подержанный",
+      "repetition": 1,
+      "interval": 1,
+      "easeFactor": 2.5,
+      "nextReviewDate": 1775706697384
+    },
+    "partager||делить, разделять": {
+      "id": "partager||делить, разделять",
+      "repetition": 1,
+      "interval": 1,
+      "easeFactor": 2.5,
+      "nextReviewDate": 1775706822150
+    },
+    "le comedien, la comedienne||актёр": {
+      "id": "le comedien, la comedienne||актёр",
+      "repetition": 1,
+      "interval": 1,
+      "easeFactor": 2.36,
+      "nextReviewDate": 1775706953819
+    },
+    "le reve||сон": {
+      "id": "le reve||сон",
+      "repetition": 2,
+      "interval": 6,
+      "easeFactor": 2.46,
+      "nextReviewDate": 1776308368336
+    },
+    "preparer||приготовить": {
+      "id": "preparer||приготовить",
+      "repetition": 1,
+      "interval": 1,
+      "easeFactor": 2.6,
+      "nextReviewDate": 1775707213282
+    },
+    "la coriandre||кориандр": {
+      "id": "la coriandre||кориандр",
+      "repetition": 1,
+      "interval": 1,
+      "easeFactor": 2.6,
+      "nextReviewDate": 1775707258092
+    },
+    "vegan(e)||веган": {
+      "id": "vegan(e)||веган",
+      "repetition": 1,
+      "interval": 1,
+      "easeFactor": 2.5,
+      "nextReviewDate": 1775707288329
+    },
+    "l'antibiotique (m)||антибиотик": {
+      "id": "l'antibiotique (m)||антибиотик",
+      "repetition": 1,
+      "interval": 1,
+      "easeFactor": 2.6,
+      "nextReviewDate": 1775707332455
+    },
+    "une pincee de sel||щепотка соли": {
+      "id": "une pincee de sel||щепотка соли",
+      "repetition": 1,
+      "interval": 1,
+      "easeFactor": 2.6,
+      "nextReviewDate": 1775707384334
+    },
+    "le confit||конфи": {
+      "id": "le confit||конфи",
+      "repetition": 1,
+      "interval": 1,
+      "easeFactor": 2.5,
+      "nextReviewDate": 1775707430701
+    },
+    "(laisser) refroidir||(дать) остыть": {
+      "id": "(laisser) refroidir||(дать) остыть",
+      "repetition": 1,
+      "interval": 1,
+      "easeFactor": 2.5,
+      "nextReviewDate": 1775707591022
+    },
+    "le teletravail, faire du teletravail||дистанционка": {
+      "id": "le teletravail, faire du teletravail||дистанционка",
+      "repetition": 1,
+      "interval": 1,
+      "easeFactor": 2.6,
+      "nextReviewDate": 1775708353565
+    },
+    "​le poisson (m)||рыба": {
+      "id": "​le poisson (m)||рыба",
+      "repetition": 1,
+      "interval": 1,
+      "easeFactor": 2.5,
+      "nextReviewDate": 1775781238775
+    },
+    "poisson (m)||рыба": {
+      "id": "poisson (m)||рыба",
+      "repetition": 1,
+      "interval": 1,
+      "easeFactor": 2.6,
+      "nextReviewDate": 1775781314692
+    },
+    "herbe (f)||трава": {
+      "id": "herbe (f)||трава",
+      "repetition": 1,
+      "interval": 1,
+      "easeFactor": 2.6,
+      "nextReviewDate": 1775781329045
+    },
+    "poule (f)||курица": {
+      "id": "poule (f)||курица",
+      "repetition": 2,
+      "interval": 6,
+      "easeFactor": 2.7,
+      "nextReviewDate": 1776213409254
+    },
+    "vache (f)||корова": {
+      "id": "vache (f)||корова",
+      "repetition": 2,
+      "interval": 6,
+      "easeFactor": 2.7,
+      "nextReviewDate": 1776213388853
+    },
+    "chien (m)||собака": {
+      "id": "chien (m)||собака",
+      "repetition": 1,
+      "interval": 1,
+      "easeFactor": 2.6,
+      "nextReviewDate": 1775781367501
+    },
+    "oiseau (m)||птица": {
+      "id": "oiseau (m)||птица",
+      "repetition": 1,
+      "interval": 1,
+      "easeFactor": 2.6,
+      "nextReviewDate": 1775781378678
+    },
+    "l'infirmier||медбрат": {
+      "id": "l'infirmier||медбрат",
+      "repetition": 1,
+      "interval": 1,
+      "easeFactor": 2.6,
+      "nextReviewDate": 1775787071601
+    },
+    "l'acteur||актёр": {
+      "id": "l'acteur||актёр",
+      "repetition": 2,
+      "interval": 6,
+      "easeFactor": 2.7,
+      "nextReviewDate": 1776308357284
+    },
+    "la niece||племянница": {
+      "id": "la niece||племянница",
+      "repetition": 2,
+      "interval": 6,
+      "easeFactor": 2.7,
+      "nextReviewDate": 1776308339717
+    },
+    "la fleuriste||продавщица цветов": {
+      "id": "la fleuriste||продавщица цветов",
+      "repetition": 1,
+      "interval": 1,
+      "easeFactor": 2.6,
+      "nextReviewDate": 1775787148336
+    }
+  }
+}
