@@ -242,6 +242,7 @@ var HangmanView = class extends import_obsidian2.ItemView {
     nextBtn.onclick = () => this.startNewGame();
     const switchBtn = controls.createEl("button", { text: "Switch Direction" });
     switchBtn.onclick = () => this.startNewGame(this.direction === "ru->fr" ? "fr->ru" : "ru->fr");
+    this.container.createEl("div", { cls: "hangman-footer", text: "Created by Makarych - Source on GitHub" });
     await this.plugin.loadVocabulary();
     this.startNewGame();
   }
@@ -293,7 +294,7 @@ var HangmanView = class extends import_obsidian2.ItemView {
     if (!this.currentWord)
       return false;
     const targetWord = this.cleanWordForGame(this.direction === "ru->fr" ? this.currentWord.french : this.currentWord.russian);
-    const letterPattern = this.direction === "ru->fr" ? /[a-zœæéèêëàâäùûüôöîïçœæ]/i : /[а-яё]/i;
+    const letterPattern = this.direction === "ru->fr" ? /[a-zœæ]/i : /[а-яё]/i;
     for (const char of targetWord) {
       if (char.match(letterPattern)) {
         const unaccentedChar = char.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
@@ -320,7 +321,7 @@ var HangmanView = class extends import_obsidian2.ItemView {
       return;
     const promptText = this.direction === "ru->fr" ? this.currentWord.russian : this.currentWord.french;
     const targetWord = this.cleanWordForGame(this.direction === "ru->fr" ? this.currentWord.french : this.currentWord.russian);
-    const letterPattern = this.direction === "ru->fr" ? /[a-zœæéèêëàâäùûüôöîïçœæ]/i : /[а-яё]/i;
+    const letterPattern = this.direction === "ru->fr" ? /[a-zœæ]/i : /[а-яё]/i;
     this.directionDisplay.setText(this.direction === "ru->fr" ? "Direction: Russian \u2192 French" : "Direction: French \u2192 Russian");
     this.promptDisplay.setText(promptText);
     this.hangmanDrawing.setText(`Mistakes: ${this.mistakes} / ${this.maxMistakes}`);
@@ -334,7 +335,7 @@ var HangmanView = class extends import_obsidian2.ItemView {
           displayText += "_ ";
         }
       } else {
-        displayText += char + " . ";
+        displayText += char + " ";
       }
     }
     this.wordDisplay.setText(displayText.trim());

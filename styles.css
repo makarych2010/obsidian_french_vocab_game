@@ -79,3 +79,9 @@
 .hangman-controls button:hover {
     background-color: var(--interactive-accent-hover);
 }
+
+.hangman-footer {
+    margin-top: 40px;
+    font-size: 14px;
+    color: var(--text-muted);
+}
