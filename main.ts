@@ -153,7 +153,7 @@ class HangmanView extends ItemView {
 
 		const promptText = this.direction === 'ru->fr' ? this.currentWord.russian : this.currentWord.french;
 		const targetWord = this.cleanWordForGame(this.direction === 'ru->fr' ? this.currentWord.french : this.currentWord.russian);
-		const letterPattern = this.direction === 'ru->fr' ? /[a-zœæ]/i : /[а-яё]/i;
+		const letterPattern = this.direction === 'ru->fr' ? /[a-zéèêëàâäùûüôöîïçœæ]/i : /[а-яё]/i;
 
 		this.directionDisplay.setText(this.direction === 'ru->fr' ? 'Direction: Russian → French' : 'Direction: French → Russian');
 		this.promptDisplay.setText(promptText);
@@ -169,7 +169,7 @@ class HangmanView extends ItemView {
 					displayText += '_ ';
 				}
 			} else {
-				displayText += char + ' '; // spaces, hyphens, etc.
+				displayText += char + '   '; // spaces, hyphens, etc.
 			}
 		}
 
