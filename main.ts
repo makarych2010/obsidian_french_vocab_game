@@ -122,7 +122,7 @@ class HangmanView extends ItemView {
 	isGameWon(): boolean {
 		if (!this.currentWord) return false;
 		const targetWord = this.cleanWordForGame(this.direction === 'ru->fr' ? this.currentWord.french : this.currentWord.russian);
-		const letterPattern = this.direction === 'ru->fr' ? /[a-zœæ]/i : /[а-яё]/i;
+		const letterPattern = this.direction === 'ru->fr' ? /[a-zœæéèêëàâäùûüôöîïçœæ]/i : /[а-яё]/i;
 		for (const char of targetWord) {
 			if (char.match(letterPattern)) {
 				const unaccentedChar = char.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
@@ -150,7 +150,7 @@ class HangmanView extends ItemView {
 
 		const promptText = this.direction === 'ru->fr' ? this.currentWord.russian : this.currentWord.french;
 		const targetWord = this.cleanWordForGame(this.direction === 'ru->fr' ? this.currentWord.french : this.currentWord.russian);
-		const letterPattern = this.direction === 'ru->fr' ? /[a-zœæ]/i : /[а-яё]/i;
+		const letterPattern = this.direction === 'ru->fr' ? /[a-zœæéèêëàâäùûüôöîïçœæ]/i : /[а-яё]/i;
 
 		this.directionDisplay.setText(this.direction === 'ru->fr' ? 'Direction: Russian → French' : 'Direction: French → Russian');
 		this.promptDisplay.setText(promptText);
@@ -166,7 +166,7 @@ class HangmanView extends ItemView {
 					displayText += '_ ';
 				}
 			} else {
-				displayText += char + ' '; // spaces, hyphens, etc.
+				displayText += char + ' . '; // spaces, hyphens, etc.
 			}
 		}
 
