@@ -321,7 +321,7 @@ var HangmanView = class extends import_obsidian2.ItemView {
       return;
     const promptText = this.direction === "ru->fr" ? this.currentWord.russian : this.currentWord.french;
     const targetWord = this.cleanWordForGame(this.direction === "ru->fr" ? this.currentWord.french : this.currentWord.russian);
-    const letterPattern = this.direction === "ru->fr" ? /[a-zœæ]/i : /[а-яё]/i;
+    const letterPattern = this.direction === "ru->fr" ? /[a-zéèêëàâäùûüôöîïçœæ]/i : /[а-яё]/i;
     this.directionDisplay.setText(this.direction === "ru->fr" ? "Direction: Russian \u2192 French" : "Direction: French \u2192 Russian");
     this.promptDisplay.setText(promptText);
     this.hangmanDrawing.setText(`Mistakes: ${this.mistakes} / ${this.maxMistakes}`);
@@ -335,7 +335,7 @@ var HangmanView = class extends import_obsidian2.ItemView {
           displayText += "_ ";
         }
       } else {
-        displayText += char + " ";
+        displayText += char + " . ";
       }
     }
     this.wordDisplay.setText(displayText.trim());

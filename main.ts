@@ -169,7 +169,7 @@ class HangmanView extends ItemView {
 					displayText += '_ ';
 				}
 			} else {
-				displayText += char + '   '; // spaces, hyphens, etc.
+				displayText += char + ' . '; // spaces, hyphens, etc.
 			}
 		}
 
